@@ -28,58 +28,58 @@ A Kinesis Consumer is a client application that reads data records from an Amazo
 Amazon DynamoDB is a fully managed, NoSQL database service offered by Amazon Web Services (AWS). It provides fast and predictable performance with the ability to scale up or down as needed, making it suitable for a wide range of applications. DynamoDB is a key-value store, which means that it stores data in the form of attribute-value pairs, similar to a dictionary. It also supports data structures such as lists and maps, allowing for more complex data models. DynamoDB is designed to be highly available and durable, with automatic data replication across multiple availability zones to protect against data loss. It also provides flexible querying capabilities, allowing users to easily retrieve data using simple queries or more complex, nested queries. 
 
 ### Flow Chart
-[flow_chart_of_the_architecture](!)
+![flow_chart_of_the_architecture](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_flow_chart.png)
 
 ### Method
 
 ##### steps
 1. Create EC2 instances for Kinesis producer and consumer
-[img1](!)
+![img1](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img1.png)
 
 2. Copy the required scripts from the local machine to the EC2 instances
-[img2](!)
+![img2](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img2.png)
 
 3. Install all the required python modules
-[img3](!)
+![img3](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img3.png)
 
 4. Create Kinesis Data Stream Pipeline 
-[img4](!)
-[img5](!)
+![img4](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img6.png)
+![img5](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img7.png)
 
 5. Create two dynamoDB databases
-[img6](!)
+![img6](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img8.png)
 
 6. Run the producer python script to send data to the pipeline
-[img7](!)
+![img7](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img9.png)
 
-7. Run the consumer python script to consume to store the data in database
-[img8](!)
-[img9](!)
-[img10](!)
+7. Run the consumer python script to consume and to store the data in database
+![img8](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img10.png)
+![img9](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img11.png)
+![img10](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img12.png)
 
 ### Results
 
 Records in Kinesis Data Stream
-[img11](!)
+![img11](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img13.png)
 
 An example record in Kinesis Data Stream
-[img12](!)
+![img12](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img14.png)
 
 Write Usage In dynamoDB given by CloudWatch
-[img13](!)
+![img13](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img15.png)
 
 Sample Records in _Precipitation_ Database 
-[img14](!)
+![img14](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img16.png)
 
 Sample Records in _Temperature_ Database
-[img15](!)
+![img15](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img17.png)
 
 Sample Record in Database
-[img16](!)
+![img16](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img18.png)
 
 Total number of Records in Precipitation Database
-[img17](!)
+![img17](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img19.png)
 
 Total Records in Temperature Database
-[img18](!)
+![img18](https://github.com/saiganeshT/cloud-projects/blob/main/weather_data_processing_using_AWS_kinesis/images/cloud1_img20.png)
 
